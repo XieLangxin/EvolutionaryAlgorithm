@@ -44,5 +44,5 @@ function X = run(X)
 	[~,index]=sort(Z(:,1));
 	Z=flipud(Z(index,:));
 	X = Z(1:size(X,1),2:n+1);
-	operation(X)(1,:)
+	operation(X(1,:))
 end

@@ -5,7 +5,7 @@ function Y = correct(Y)
 		count = 0;
 		j;
 		for j = 1:size(Y,2)
-			if (count+Y(i,j)*goods(3,j))<max_capacity,
+			if (count+Y(i,j)*goods(3,j))<=max_capacity,
 				count += Y(i,j)*goods(3,j);
 			else break;
 			end;
